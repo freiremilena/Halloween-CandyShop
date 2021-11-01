@@ -226,7 +226,7 @@ button {
   height: 250px;
   justify-self: center;
 }
-.home__indicador {
+.home__indicator {
   width: 8px;
   height: 8px;
   background-color: var(--title-color);
@@ -235,7 +235,7 @@ button {
   top: 7rem;
   right: 2rem;
 }
-.home__indicador::after {
+.home__indicator::after {
   content: "";
   position: absolute;
   width: 1px;
@@ -273,6 +273,26 @@ button {
   display: flex;
   justify-content: space-between;
 }
+.swiper-pagination {
+  position: initial;
+  margin-top: var(--mb-1);
+}
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  opacity: 1;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 5px;
+  border-radius: 0.5rem;
+}
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
