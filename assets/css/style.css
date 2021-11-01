@@ -42,7 +42,7 @@
   /*_______font aweight________*/
   --font-medium: 500;
   --font-semi-bold: 600;
-  --font-balck: 900;
+  --font-black: 900;
 
   /*_______margenes bottom________*/
   --mb-0-25: 0.25rem;
@@ -133,4 +133,83 @@ button {
 .main {
   /* para animação */
   overflow: hidden;
+}
+.header {
+  width: 100%;
+  background: var(--body-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: var(--font-medium);
+}
+.nav__logo-img {
+  width: 1.25rem;
+}
+.nav__link,
+.nav__logo,
+.nav__toggle,
+.nav__close {
+  color: var(--title-color);
+}
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    width: 100%;
+    background: var(--container-color);
+    top: -150%;
+    left: 0;
+    padding: 3.5rem 0;
+    transition: 0.4s;
+    z-index: var(--z-fixed);
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+}
+
+.nav__img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav__close {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  cursor: pointer;
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+.nav__link {
+  text-transform: uppercase;
+  font-weight: var(--font-black);
+  transition: 0.4s;
+}
+
+.nav__link:hover {
+  color: var(--text-color);
+}
+.show-menu {
+  top: 0;
 }
