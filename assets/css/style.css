@@ -349,3 +349,66 @@ button {
 .category__data:hover .category__img {
   transform: translateY(-0.5rem);
 }
+.about__container {
+  row-gap: 2rem;
+}
+.about__data {
+  text-align: center;
+}
+.about__description {
+  margin-bottom: var(--mb-2);
+}
+.about__img {
+  width: 200px;
+  justify-self: center;
+}
+.trick__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.trick__content {
+  position: relative;
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+.trick__img {
+  width: 90px;
+  transition: 0.3s;
+}
+.trick__subtitle,
+.trick__price {
+  display: block;
+}
+.trick__subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+.trick__title,
+.trick__price {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+.trick__button {
+  display: inline-flex;
+  padding: 0.5rem;
+  border-radius: 0.25rem 0.25rem 0.75rem 0.25rem;
+  position: absolute;
+  right: -3rem;
+  bottom: 0;
+}
+.trick__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.trick__content:hover .trick__img {
+  transform: translateY(-0.5rem);
+}
+.trick__content:hover .trick__button {
+  right: 0;
+}
