@@ -346,6 +346,6 @@ button {
 .category__title {
   margin-bottom: var(--mb-0-25);
 }
-.category__data:hover .category__container {
+.category__data:hover .category__img {
   transform: translateY(-0.5rem);
 }
