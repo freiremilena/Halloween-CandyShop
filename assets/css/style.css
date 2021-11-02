@@ -217,6 +217,20 @@ button {
 .scroll-header {
   background: var(--container-color);
 }
+.active-link {
+  position: relative;
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
 .home__content {
   row-gap: 1rem;
 }
@@ -604,10 +618,39 @@ button {
   color: var(--title-color);
 }
 
-.footer__copy{
+.footer__copy {
   display: block;
   text-align: center;
   font-size: var(--smaller-font-size);
   margin-top: 4.5rem;
 }
+.scrollup {
+  position: fixed;
+  background: var(--container-color);
+  right: 1rem;
+  bottom: -20rem;
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  opacity: 0.8;
+  transition: 0.4s;
+}
 
+.scrollup__icon{
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.scrollup:hover{
+  background: var(--container-color);
+  opacity: 1;
+}
+
+.show-scroll{
+  bottom: 3rem;
+}
+
+::-webkit-scrollbar{
+  
+}
