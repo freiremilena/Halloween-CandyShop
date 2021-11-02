@@ -47,3 +47,10 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+let newSwiper = new Swiper(".new-swiper", {
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  loop: true,
+});
