@@ -23,7 +23,7 @@ This project was developed with the following technologies:
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JavaScrip](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## :information_source: How To Use
 
